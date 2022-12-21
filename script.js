@@ -19,26 +19,21 @@ for (const type of recipeTypes) {
 }
 const categories = document.querySelectorAll(".categories");
 
-//expandable navigation bar
-let expandableNavBar = () => {
-    document.addEventListener("mouseover", (e) => {
-        if (e.target.classList.contains("categories")) {
-            for (const category of categories) {
-            category.classList.replace("stretched", "folded");
-            }
-            e.target.classList.replace("folded", "stretched");
-        }
-    })
-}
-expandableNavBar();
-
 //recipe content
 let showRecipe = () => {
     const dishes = document.querySelectorAll(".recipe");
 
     document.addEventListener("click", (e) => {
+        const selectedType = e.target.innerHTML;
+        
         if (e.target.classList.contains("categories")) {
-            const selectedType = e.target.innerHTML;
+            for (const category of categories) {
+                category.classList.replace("stretched", "folded");
+            }
+    
+            if (e.target.classList.contains("categories")) {
+                e.target.classList.replace("folded", "stretched");
+            }
 
             for (const dish of dishes) {
                 dish.classList.replace("show", "hidden");

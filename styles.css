@@ -41,6 +41,10 @@ header, footer, nav {
     text-align: center;
 }
 
+h1 {
+    text-transform: uppercase;
+}
+
 footer .icon-wrapper {
     display: flex;
     justify-content: space-around;
@@ -93,6 +97,11 @@ footer .icon-wrapper {
     flex: 1 1 100%;
 }
 
+.categories:hover {
+    flex: 1 1 100%;
+    filter: brightness(100%) contrast(100%) grayscale(0);
+}
+
 .folded {
     flex: 1 1 0%;
     filter: brightness(75%) contrast(65%) grayscale(20%);
@@ -111,6 +120,26 @@ footer .icon-wrapper {
 .recipe article {
     display: flex;
     flex-direction: column;
+}
+
+figure {
+    align-self: center;
+    text-align: center;
+}
+
+h3 {
+    text-transform: capitalize;
+    margin: 20px;
+}
+
+.dish_pic {
+    border: 3px solid white;
+    outline: black 1px solid;
+    outline-offset: 5px;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    object-fit: cover;
 }
 
 h2[role="type-title"] {
@@ -153,10 +182,10 @@ span[role="title-container"] {
 
     color: rgb(13, 13, 107);
     border-bottom: lightblue 2px solid;
-    padding-block: 40px;
+    padding-block: 25px;
 }
 
-.summary + h3 {
+.summary + h4 {
     margin-block: 40px;
 }
 
