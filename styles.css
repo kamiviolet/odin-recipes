@@ -1,0 +1,162 @@
+html {
+    scroll-behavior: smooth;
+    font-family: 'Encode Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+
+    height: 100vh;
+    width: 100vw;
+    align-items: flex-start;
+    justify-content: center;
+
+    line-height: 2.5em;
+    font-size: large;
+
+    overflow-x: hidden;
+}
+
+header, footer, nav {
+    flex: 0 0 100%;
+}
+
+header, footer, nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 20vh;
+    padding-block: 20px;
+    text-align: center;
+}
+
+footer .icon-wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.switch {
+    display: none;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 725px;
+    height: 625px;
+
+    overflow-x: hidden;
+
+    background-color: white;
+}
+
+.categories {
+    writing-mode: vertical-lr;
+    text-orientation: sideways;
+
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 700;
+    text-shadow: black 2px 1px 2px;
+    color: aliceblue;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    padding: 30px;
+    height: 97%;
+    margin-block: 15px;
+    width: 100%;
+
+    background-color: lightblue;
+
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
+.stretched {
+    flex: 1 1 100%;
+}
+
+.folded {
+    flex: 1 1 0%;
+    filter: brightness(75%) contrast(65%) grayscale(20%);
+}
+
+.recipe {
+    position: relative;
+    margin-block: 50px;
+    width: 700px;
+    outline: gainsboro 2px solid;
+    border-radius: 20px;
+    padding: 25px;
+    line-height: 175%;
+}
+
+.recipe article {
+    display: flex;
+    flex-direction: column;
+}
+
+h2[role="type-title"] {
+    position: absolute;
+    top: -50px;
+
+    display: flex;
+    justify-content: center;
+    width: 640px;
+}
+
+span[role="title-container"] {
+    background-color: white;
+    padding: 5px 25px;  
+
+    text-transform: uppercase;
+}
+
+.ingredients, ol li {
+    padding-block-end: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.credit {
+    font-size: small;
+    color: darkgray;
+}
+
+.summary {
+    font-style: italic;
+    text-align: center;
+    padding-inline: 25px;
+
+    color: rgb(13, 13, 107);
+    border-bottom: lightblue 2px solid;
+    padding-bottom: 25px;
+}
+
+.backToTop {
+    display: block;
+    padding: 30px;
+    align-self: center;
+}
