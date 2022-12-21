@@ -22,11 +22,10 @@ const categories = document.querySelectorAll(".categories");
 //expandable navigation bar
 let expandableNavBar = () => {
     document.addEventListener("mouseover", (e) => {
-        for (const category of categories) {
-            category.classList.replace("stretched", "folded");
-        }
-
         if (e.target.classList.contains("categories")) {
+            for (const category of categories) {
+            category.classList.replace("stretched", "folded");
+            }
             e.target.classList.replace("folded", "stretched");
         }
     })

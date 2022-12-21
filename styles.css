@@ -16,7 +16,7 @@ body {
     flex-wrap: wrap;
 
     height: 100vh;
-    width: 100vw;
+    width: auto;
     align-items: flex-start;
     justify-content: center;
 
@@ -27,7 +27,7 @@ body {
 }
 
 header, footer, nav {
-    flex: 0 0 100%;
+    flex: 0 0 100vw;
 }
 
 header, footer, nav {
@@ -37,7 +37,7 @@ header, footer, nav {
     align-items: center;
 
     min-height: 20vh;
-    padding-block: 20px;
+    padding: 20px 30px;
     text-align: center;
 }
 
@@ -167,18 +167,21 @@ span[role="title-container"] {
 }
 
 @media screen and (max-width: 700px) {
+    body {
+        padding: 30px;
+    }
 
     .main-menu {
         flex-direction: column;
         width: 85vw;
-        height: 70vh;
+        height: 550px;
     }
 
     .categories {
         writing-mode: horizontal-tb;
         font-size: xx-large;
         margin-block: 10px;
-        width: 95%;
+        width: 85%;
     }
 
     .recipe {
@@ -187,6 +190,6 @@ span[role="title-container"] {
     }
 
     h2[role="type-title"] {
-        width: 95%;
+        width: 92%;
     }
 }
