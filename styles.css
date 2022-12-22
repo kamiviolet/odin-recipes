@@ -36,8 +36,8 @@ header, footer, nav {
     justify-content: center;
     align-items: center;
 
-    min-height: 20vh;
-    padding: 20px 30px;
+    min-height: 30vh;
+    padding: 0 30px;
     text-align: center;
 }
 
@@ -172,7 +172,8 @@ span[role="title-container"] {
 
 .credit {
     font-size: small;
-    color: darkgray;
+    color: rgb(255, 0, 0);
+    line-height: 150%;
 }
 
 .summary {
@@ -197,24 +198,24 @@ span[role="title-container"] {
 
 @media screen and (max-width: 700px) {
     body {
-        padding: 30px;
+        padding: .75em;
     }
 
     .main-menu {
         flex-direction: column;
-        width: 85vw;
+        width: 90vw;
         height: 550px;
     }
 
     .categories {
         writing-mode: horizontal-tb;
         font-size: xx-large;
-        margin-block: 10px;
+        margin-block: .5em;
         width: 85%;
     }
 
     .recipe {
-        padding: 20px;
+        padding: 1em;
         width: 80vw;
     }
 
